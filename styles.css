@@ -1,0 +1,145 @@
+body{
+    background-color:lightgray;
+}
+.intro{
+
+    text-align: center;
+}
+.style-img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 15px;
+    transition: box-shadow 0.3s ease;
+}
+.style-img:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+}
+
+.movies{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.caption{
+    font-size: 20px;
+    font-weight: bold;
+    color:brown
+}
+.highlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+.about{
+    background-color: #4CAF50;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:15px;
+}
+.about:hover{
+    background-color: lightgreen;
+}
+.link{
+    color: orangered;
+    font-size: 20px;
+}
+
+.link:hover{
+    color:aqua;
+    background-color: transparent;
+}
+
+.link:visited{
+    color: red;
+    background-color: transparent;
+}
+
+.link:active{
+    color: yellow;
+    background-color: transparent;
+}
+th{
+    background-color: blueviolet;
+}
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+.styled-ul{
+    list-style-type: square;
+    list-style-position: inside;
+
+}
+.styled-ol{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+
+}
+.data-table{
+    display: flex;
+    justify-content: center;
+    margin:15px;
+}
+table{
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 4px 8px brown;
+}
+.gallery{
+    display: flex;
+    justify-content:center;
+    margin:20px;
+    
+}
+.lists{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin:30px;
+}
+
+.list1{
+    
+    border: 1px solid blueviolet;
+    padding: 20px;
+    width: 200px;
+    height:250px;
+    margin:10px;
+    background-color: lightgoldenrodyellow;
+    transition: box-shadow 0.3s ease;
+}
+
+.list1:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+
+}
+
+.last{
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+
+}
+.button1{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    .gallery{
+        flex-direction: column;
+    }
+    .style-img{
+        width: 100%;
+    }
+    .lists{
+        flex-direction: column;
+        align-items: center;
+    }
+}
